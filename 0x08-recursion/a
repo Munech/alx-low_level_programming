@@ -1,0 +1,4 @@
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89
+git add .
+git commit -m "$@"
+git push
