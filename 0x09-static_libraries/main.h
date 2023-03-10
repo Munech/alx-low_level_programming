@@ -1,4 +1,3 @@
-#!/bin/bash
 #ifndef _MAIN_FILE
 #define _MAIN_FILE
 
