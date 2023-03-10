@@ -1,5 +1,5 @@
-#ifndef _MAIN_FILE
-#define _MAIN_FILE
+#ifndef MAIN_FILE
+#define MAIN_FILE
 
 int _putchar(char c);
 int _islower(int c);
@@ -23,4 +23,3 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
 #endif
-
