@@ -1,26 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main"
+#include "main.h"
 
 /**
- * main - multiplies two numbers
- * @argc: n args
- * @argv: arr args
- * Return: 0
+ * main - print product of argument numbers
+ * @argc: argument counter
+ * @argv: numbers to multiply
+ * Return: 0 on success, 1 if two arguments not given
  */
+
 int main(int argc, char *argv[])
 {
-	int i, val = 1;
 
+	/* validate input */
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		val *= atoi(argv[i]);
-	}
-	printf("%d\n", val);
+
+	/* mulitply two arguments passed via cmd line */
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
